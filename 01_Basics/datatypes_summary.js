@@ -27,3 +27,28 @@ const myFunction = function(){
 console.log(typeof outsideTemperature)
 // Non Primitive Data Type (Reference Type Data Type)
 // Array, Objects, Functions
+
+// ******************************************************
+
+// Memory are of two types, Stack and Heap
+// Premitive Type uses Stack, yaha jo variable declare kiya hai uska ek copy milta hai
+// Non Premitive Type uses Heap, yaha pe reference milta hai orignal value ka i.e. sab orignal value me hota hai
+
+let myYouTubeName = "aryan"
+
+let anotherName = myYouTubeName
+anotherName = "Coffee aur code"
+
+console.log(myYouTubeName);
+console.log(anotherName);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@paytm"
+}
+
+let userTwo = userOne
+
+userTwo.email = "aryansharmabkvv@gmail.com";
+console.log(userTwo.email)
+console.log(userOne.email)
