@@ -23,3 +23,30 @@ num4 -= 6;
 console.log(num4);
 
 // Activity 3 Comparison Operators
+
+// Task 8
+let num5 = 18;
+let num6 = 49;
+
+let comp1 = num5 > num6;
+let comp2 = num5 < num6;
+
+console.log(comp1);
+console.log(comp2);
+
+// Task 9
+let num7 = 7;
+let num8 = 8;
+
+let comp3 = num7 >= num8;
+let comp4 = num8 <= num7;
+
+console.log(comp3);
+console.log(comp4);
+
+// Task 19
+let num9 = 7;
+let num10 = '7';
+
+console.log(num9==num10);
+console.log(num9===num10);
