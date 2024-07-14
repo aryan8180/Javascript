@@ -106,3 +106,4 @@ console.log(num16 != num17);
 let num20 = 20;
 
 let positiveornegative = num20 > 0 ? "Positive" : "Negative";
+console.log(positiveornegative);
