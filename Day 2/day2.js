@@ -80,3 +80,29 @@ console.log(evenorodd);
 let num14 = 14;
 let num15 = 16;
 
+console.log(num14 + num15)
+console.log(num14 - num15)
+console.log(num14 * num15)
+console.log(num14 / num15)
+console.log(num14 % num15)
+
+// 2 Comparison and Logical Operators Script
+let num16 = 77;
+let num17 = 17;
+
+console.log(num16 > num17);
+console.log(num16 < num17);
+
+let num18 = 3;
+let num19 = '3';
+console.log(num18==num19);
+console.log(num18===num19);
+
+console.log(num16 && num17);
+console.log(num16 || num17);
+console.log(num16 != num17);
+
+// 3 Ternary Operator Script
+let num20 = 20;
+
+let positiveornegative = num20 > 0 ? "Positive" : "Negative";
