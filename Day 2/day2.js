@@ -50,3 +50,33 @@ let num10 = '7';
 
 console.log(num9==num10);
 console.log(num9===num10);
+
+// Activity 4 Logical Operators
+
+// Task 11, 12, 13
+
+let num11 = 5;
+let num12 = 7;
+
+let andOpr = num11 && num12;
+console.log(andOpr);
+
+let orOpr = num11 || num12;
+console.log(orOpr);
+
+let notOpr = num11 != num12;
+console.log(notOpr);
+
+// Activity 5 Ternary Operator
+
+// Task 14
+
+let num13 = 10;
+let evenorodd = num13%2==0 ? "Even" : "Odd";
+console.log(evenorodd);
+
+// Feature Request
+// 1 Arithmetic Operations Script
+let num14 = 14;
+let num15 = 16;
+
