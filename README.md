@@ -24,5 +24,6 @@ This file, which you're currently reading, serves as the main entry point for th
 I'm excited to embark on this 30-day JavaScript learning journey! I'll be updating this README regularly to track my progress and share my experiences.
 
 - [x] Day 1: Variables and Data Types
+- [x] Day 2: Operators
 
 I'm excited to see how much I can learn and grow as a JavaScript developer over the next 30 days. Feel free to follow along, provide feedback, or even join me on this journey!
