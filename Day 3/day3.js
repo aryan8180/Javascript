@@ -72,6 +72,7 @@ switch (day) {
 }
 
 // Task 5
+
 let score = 80;
 switch (true) {
     case score >= 90:
@@ -94,7 +95,28 @@ switch (true) {
         break;
 }
 
+// Activity 4 Conditional (Ternary) Operator
+
 // Task 6
 let num6 = 8;
 let oddoreven = num6 % 2 == 0 ? "Even" : "Odd";
 console.log(oddoreven);
+
+// Activity 5 Combining Conditions
+
+// Task 7
+
+let year = 2000;
+if (year % 4 == 0) {
+    if (year % 100 == 0) {
+        if (year % 400 == 0) {
+            console.log("Leap Year");
+        } else {
+            console.log("Not a leap year");
+        }
+    } else {
+        console.log("Leap Year");
+    }
+} else {
+    console.log("Not a leap year");
+}
