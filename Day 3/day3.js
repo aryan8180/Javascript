@@ -93,3 +93,8 @@ switch (true) {
         console.log("Invalid Score");
         break;
 }
+
+// Task 6
+let num6 = 8;
+let oddoreven = num6 % 2 == 0 ? "Even" : "Odd";
+console.log(oddoreven);
