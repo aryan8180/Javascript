@@ -32,3 +32,35 @@ while(i>=1){
     console.log(i);
     i--;
 }
+
+// Activity 3 Do...While Loop
+
+// Task 5
+
+i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i<=5);
+
+// Task 6
+let product = 1;
+let num = 4;
+i = 1;
+do{
+    product = product * i;
+    i++;
+}while(i<=num);
+console.log(product);
+
+// Activity 4 Nested Loops
+
+// Task 7
+let n = 5;
+for(i = 1;i<=n;i++){
+    let line = "";
+    for(let j = 1;j<=i;j++){
+        line += "* ";
+    }
+    console.log(line);
+}
