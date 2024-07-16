@@ -25,3 +25,10 @@ while(i<=10){
     i++;
 }
 console.log(`Sum of first 10 numbers is ${sum1}`);
+
+// Task 4
+i = 10;
+while(i>=1){
+    console.log(i);
+    i--;
+}
