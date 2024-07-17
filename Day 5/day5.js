@@ -88,3 +88,33 @@ let s = 'Aryan';
 console.log(greeting(s,21));
 s = 'Happy';
 console.log(greeting(s,16));
+
+// Activity 5 Higher Order Functions
+
+// Task 9
+
+const greet = (num, wish) => {
+    for (let i = 0; i < num; i++) {
+        wish();
+    }
+};
+
+const wish = () => console.log("Hey, Aryan");
+
+greet(7, wish);
+
+// Task 10
+
+const applyFunctions = (func1, func2, value) => {
+    const result1 = func1(value);
+    const result2 = func2(result1);
+    return result2;
+};
+
+const addTwo = (num) => num + 2;
+const multiplyByThree = (num) => num * 3;
+
+const initialValue = 5;
+const finalResult = applyFunctions(addTwo, multiplyByThree, initialValue);
+
+console.log(finalResult); 
