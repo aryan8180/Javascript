@@ -74,3 +74,17 @@ console.log(check('Aryan','z'));
 
 // Task 7
 
+function product(a,b){
+    return a*b;
+}
+let a = 9;
+console.log(product(a,7));
+
+// Task 8
+function greeting(s,age){
+    return `Hey ${s}, you are ${age} year old.`
+}
+let s = 'Aryan';
+console.log(greeting(s,21));
+s = 'Happy';
+console.log(greeting(s,16));
