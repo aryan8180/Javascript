@@ -1,0 +1,33 @@
+// Day 6 Arrays
+
+// Activity 1 Array Creation and Access
+
+// Task 1
+let arr1 = [1,2,3,4,5];
+console.log(arr1);
+
+// Task 2
+let first_element = arr1[0];
+let last_element = arr1[arr1.length-1];
+console.log(`First element of the array is: ${first_element}`);
+console.log(`Last element of the array is: ${last_element}`);
+
+// Activity 2 Array Methouds (Basic)
+
+// Task 3
+
+arr1.push(6);
+console.log(arr1);
+
+arr1.pop();
+console.log(arr1);
+
+arr1.shift();
+console.log(arr1);
+
+arr1.unshift(10);
+console.log(arr1);
+
+// Activity 3 Array Methouds (Intermediate)
+
+// Task 7
