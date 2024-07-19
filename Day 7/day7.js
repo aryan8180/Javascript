@@ -30,3 +30,12 @@ console.log(book.info(2020))
 // Activity 3 Nested Objects
 
 // Task 5
+
+const library = {
+    books:[{
+        title: "Operating Systems"},{
+        title: "Computer Networks",},{
+        title: "WWW: World Wide Web" },
+    ]
+}
+console.log(library);
