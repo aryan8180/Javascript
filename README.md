@@ -29,5 +29,6 @@ I'm excited to embark on this 30-day JavaScript learning journey! I'll be updati
 - [x] Day 4: Loops
 - [x] Day 5: Functions
 - [x] Day 6: Arrays
+- [x] Day 7: Objects
 
 I'm excited to see how much I can learn and grow as a JavaScript developer over the next 30 days. Feel free to follow along, provide feedback, or even join me on this journey!
