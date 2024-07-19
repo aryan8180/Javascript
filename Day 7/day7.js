@@ -32,10 +32,11 @@ console.log(book.info(2020))
 // Task 5
 
 const library = {
-    books:[{
-        title: "Operating Systems"},{
-        title: "Computer Networks",},{
-        title: "WWW: World Wide Web" },
+    name: 'Open Library',
+    books: [
+        { title: 'Computer wit Networks' },
+        { title: 'Operating the System' },
+        { title: 'Data with Structure and Algorithms' }
     ]
-}
+};
 console.log(library);
