@@ -35,6 +35,11 @@ console.log(users); // Displays in array
 console.log(...users);  // Displays like individual elements
 */
 
+/* 
+Rest Parameter(...)
+Allows a function to accept indefinite number of arguements as an array
+*/
+
 
 // Activity 1: Template Literals
 
@@ -61,4 +66,17 @@ const even = [2,4,6,8,10];
 const odd = [1,3,5,7,9];
 const combinedNumbers = [...even,...odd];
 console.log(combinedNumbers);
+
+// Task 6
+
+function sumAll(...nums) {
+    let total = 0;
+    for(const num of nums){
+        total+=num;
+    }
+    return total;
+}
+
+console.log(sumAll(5,6));
+console.log(sumAll(5,6,7,8));
 
