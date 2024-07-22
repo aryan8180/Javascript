@@ -24,8 +24,15 @@ If there are no arguements we can write sum = () => x+y;
 
 /*
 Mutable and Immutable
-If the value can be changed, it's called Mutable
-If the value cannot be changed, it's called Immutable
+If the value can be changed, it's called Mutable Primitive Types
+If the value cannot be changed, it's called Immutable Reference Type (Array and Object)
+*/
+
+/* 
+Spread Operator (...) Array, Objects and Functions
+const users = ['user1','user2','user3']
+console.log(users); // Displays in array
+console.log(...users);  // Displays like individual elements
 */
 
 
@@ -45,3 +52,13 @@ ${name},
 I am ${age}
 years old.`;
 console.log(description);
+
+// Activity 3 Spread and Reset Operators
+
+// Task 5
+
+const even = [2,4,6,8,10];
+const odd = [1,3,5,7,9];
+const combinedNumbers = [...even,...odd];
+console.log(combinedNumbers);
+
