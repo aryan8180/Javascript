@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Day 9 of Javascript 30 Days Challenge</h1>
+    </div>
+    <div>
+        <h2 class="Remove-tag">Tag to be Remove by js</h2>
+    </div>
+    <div class="container">
+        <h2>Changing color with js by class as a selector</h2>
+    </div>
+    <ul class="Task-list">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+    </ul>
+    <a class="link" href="https://www.google.com">Google but change it to youtube</a>
+    <div>
+        <h3 class="Before">Changing css class with js</h3>
+    </div>
+    <div>
+        <p class="para">Some Random Text</p>
+        <button class="btn">change paragraph text with js</button>
+    </div>
+    <script>
+        let title = document.getElementById('title');
+        title.textContent = 'Changing color with js by class as a selector';
+
+        let container = document.querySelector('.container');
+        container.style.backgroundColor = 'red';
+
+        let div = document.createElement('div');
+        div.textContent = 'New div created';
+        document.body.appendChild(div);
+
+        let li = document.createElement('li');
+        li.textContent = 'New Task created with js';
+        document.querySelector('.Task-list').appendChild(li);
+
+        let Remove_tag = document.querySelector('.Remove-tag');
+        Remove_tag.remove();
+
+        let Task_list = document.querySelector('.Task-list');
+        Task_list.lastElementChild.remove();
+
+        let link = document.querySelector('.link');
+        link.setAttribute('href', 'https://www.youtube.com');
+
+        let Before = document.querySelector('.Before');
+        Before.classList.add('Before-after');
+        Before.classList.remove('Before');
+
+        let btn = document.querySelector('.btn');
+        btn.addEventListener('click', () => {
+            let p = document.querySelector('.para');
+            p.textContent = 'Changing paragraph text with js';
+        });
+
+        btn.addEventListener('mouseover', () => {
+            btn.style.borderColor = 'red';
+        });
+
+    </script>
+</body>
+
+</html>
