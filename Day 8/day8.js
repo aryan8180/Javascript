@@ -40,6 +40,17 @@ Rest Parameter(...)
 Allows a function to accept indefinite number of arguements as an array
 */
 
+/* 
+TBC
+The map() method creates a new array populated with the results calling a provided function on every element in the calling array
+const user = ['sam','tim','john'];
+function transform(value){
+    return value.toUpperCase();
+}
+const modiuser = user.map(transform);
+console.log(modiuser);
+*/
+
 
 // Activity 1: Template Literals
 
@@ -48,7 +59,7 @@ Allows a function to accept indefinite number of arguements as an array
 let name = "Aryan";
 let age = 21;
 
-console.log(`My name is ${name}, I am ${age} years old.`);
+// console.log(`My name is ${name}, I am ${age} years old.`);
 
 // Task 2
 
@@ -56,7 +67,28 @@ let description = `My name
 ${name},
 I am ${age}
 years old.`;
-console.log(description);
+// console.log(description);
+
+// Activity 2 Destructuring
+
+// Task 3
+
+const num = [1,2,3,4,5];
+const [first] = num;
+console.log(first);
+const [,second] = num;
+console.log(second);
+
+// Task 4
+
+const book = [
+    {"name": "Magic"},
+    {"author":"Olympic Ayres"}
+]
+const [title] = book;
+console.log(title);
+const [,writer] = book;
+console.log(writer);
 
 // Activity 3 Spread and Reset Operators
 
@@ -65,7 +97,7 @@ console.log(description);
 const even = [2,4,6,8,10];
 const odd = [1,3,5,7,9];
 const combinedNumbers = [...even,...odd];
-console.log(combinedNumbers);
+// console.log(combinedNumbers);
 
 // Task 6
 
@@ -77,6 +109,21 @@ function sumAll(...nums) {
     return total;
 }
 
-console.log(sumAll(5,6));
-console.log(sumAll(5,6,7,8));
+// console.log(sumAll(5,6));
+// console.log(sumAll(5,6,7,8));
+
+// Activity 4 Default Parameters
+
+// Task 7
+
+function product(a,b=1){
+    return a*b;
+}
+console.log(product(7));
+console.log(product(7,10));
+
+// Activity 5 Enhanced Object Literals
+
+// Task 8
+
 
