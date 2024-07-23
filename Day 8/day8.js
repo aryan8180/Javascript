@@ -125,5 +125,24 @@ console.log(product(7,10));
 // Activity 5 Enhanced Object Literals
 
 // Task 8
+let n = "name";
+
+var obj = {
+    [n]:"Aryan",
+    age:21
+}
+console.log(obj.name);
+
+// Task 9
+let t = "student";
+
+var objec = {
+    [t + "name"]: "Aryan Sharma",
+    course: "Mtech",
+    detail: function(){
+        return `${this.studentname} is student of ${this.course}`;
+    }
+}
+console.log(objec.detail());
 
 
