@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+
+<body>
+    <script>
+        /*
+        const product = {
+            name:'Trousers',
+            price: 499
+        };
+        console.log(product)
+        console.log(product.name);
+        console.log(product.price);
+
+        product.name = 'shirt';
+        console.log(product); 
+
+        delete product.price;
+        console.log(product);
+        */
+
+        const product2 = {
+            name: 'shirt',
+            ['delivery-time']: '1 day' ,
+            rating: {
+                stars: 4.5,  // Nested Object
+                count: 87
+            }
+        };
+        console.log(product2);
+        console.log(product2['name']); /* [] notation is same as dot notation */
+        console.log(product2['delivery-time']);
+
+        console.log(typeof JSON.stringify(product2));
+        JSON.parse(JSON.stringify(product2));
+
+        // const library = {
+        //     name: 'Open Library',
+        //     books: [
+        //         { title: 'Computer wit Networks' },
+        //         { title: 'Operating the System' },
+        //         { title: 'Data with Structure and Algorithms' }
+        //     ]
+        // };
+        // console.log(library);
+    </script>
+</body>
+
+</html>

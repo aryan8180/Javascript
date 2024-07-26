@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <p>
+        <button onclick="
+            document.querySelector('.p-choice').innerText = 'You choose: Heads'
+        ">Heads</button>
+        <button onclick="
+            document.querySelector('.p-choice').innerText = 'You choose: Tails'
+        ">Tails</button>
+    </p>
+    <p class="p-choice"></p>
+    <script>
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice</title>
+</head>
+<body>
+    <input type="text" placeholder="Name" onkeydown="submitResponse()">
+    <button onclick="
+        submitResponse();
+    ">Submit</button>
+    <p class="js-submit-button"></p>
+    <script>
+        function submitResponse(){
+            const name = document.querySelector('input').value
+            document.querySelector('.js-submit-button').innerText = `Your name is: ${name}`
+        }
+    </script>
+</body>
+</html>

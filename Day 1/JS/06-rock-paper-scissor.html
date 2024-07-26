@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <button onclick="
+    const randomNumber = Math.random();
+    if(randomNumber>=0 && randomNumber<1/3){
+        console.log(`You Pick Rock, Computer Pick Rock. It's a Tie!`);
+    }else if(randomNumber>=1/3 && randomNumber<2/3){
+        console.log('You Pick Rock, Computer Pick Paper. You Lost:/');
+    }else{
+        console.log('You Pick Rock, Computer Pick Scissor. You Won!');
+    }">Rock</button>
+    <button onclick="
+    randomNumber = Math.random();
+    if(randomNumber>=0 && randomNumber<1/3){
+        console.log('You Pick Paper, Computer Pick Rock. You Won!');
+    }else if(randomNumber>=1/3 && randomNumber<2/3){
+        console.log(`You Pick Paper, Computer Pick Paper. It's a Tie!`)
+    }else{
+        console.log('You Pick Paper, Computer Pick Scissor. You Lost:/');
+    }">Paper</button>
+    <button onclick="
+    randomNumber = Math.random();
+    if(randomNumber >= 0 && randomNumber < 1/3){
+        console.log('You Pick Scissor, Computer Pick Rock. You Lost:/');
+    }else if(randomNumber>=1/3 && randomNumber<2/3){
+        console.log('You Pick Scissor, Computer Pick Paper. You Won!');
+    }else{
+        console.log(`You Pick Scissor, Computer Pick Scissor. It's a Tie!`);
+    }">Scissor</button>
+    <script>
+    </script>
+</body>
+</html>
