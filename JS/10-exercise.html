@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise</title>
+    <style>
+        .to-cart{
+            background-color: rgb(255,216,20);
+            border: none;
+            padding-top: 5px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 5px;
+            border-radius: 50px;
+        }
+
+        .uber-button-request{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .uber-button-schedule{
+            background-color: rgb(230,230,230);
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .js-button{
+            background-color: rgb(230,230,230);
+            color: black;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .is-toggled{
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="to-cart">
+        Add to Cart 
+    </button>
+    <button class="uber-button-request">
+        Request now
+    </button>
+    <button class="uber-button-schedule">
+        Schedule for later
+    </button>
+    <button class="js-button is-toggled" onclick="
+      let button = event.target;
+      button.classList.toggle('is-toggled');
+    ">Gaming</button>
+    <button class="js-button is-toggled" onclick="
+      button = event.target;
+      button.classList.toggle('is-toggled');
+    ">Music</button>
+    <button class="js-button is-toggled" onclick="
+      button = event.target;
+      button.classList.toggle('is-toggled');
+    ">Tech</button>
+</body>
+</html>
